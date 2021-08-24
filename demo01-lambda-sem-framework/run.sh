@@ -1,4 +1,17 @@
 # 01 - Criar arquivo de políticas de segurança
+politicas.json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "lambda.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
 
 # 02 - Criar role de segurança
 DOC: https://aws.amazon.com/pt/premiumsupport/knowledge-center/iam-assume-role-cli/
